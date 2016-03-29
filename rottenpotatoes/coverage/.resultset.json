@@ -1,104 +1,12 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/ubuntu/workspace/rottenpotatoes/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/rottenpotatoes/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/rottenpotatoes/app/helpers/movies_helper.rb": [
-        1,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/rottenpotatoes/app/controllers/movies_controller.rb": [
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/rottenpotatoes/app/models/movie.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null
-      ]
     },
-    "timestamp": 1459017854
+    "timestamp": 1459284967
+  },
+  "RSpec": {
+    "coverage": {
+    },
+    "timestamp": 1459194943
   }
 }

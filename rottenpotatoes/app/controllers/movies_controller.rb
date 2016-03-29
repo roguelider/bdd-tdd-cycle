@@ -5,6 +5,12 @@ class MoviesController < ApplicationController
     @movie = Movie.find(id) # look up movie by unique ID
     # will render app/views/movies/show.<extension> by default
   end
+  
+ def show_director
+    id = params[:id]
+    @movie = Movie.find(id)
+    @movies_list = @movie.find_all_by_director
+  end
 
   def index
     sort = params[:sort] || session[:sort]
@@ -27,12 +33,13 @@ class MoviesController < ApplicationController
       redirect_to :sort => sort, :ratings => @selected_ratings and return
     end
 
-    if params[:ratings] != session[:ratings] and @selected_ratings != {}
+    if params[:sort] != session[:sort] or params[:ratings] != session[:ratings]
       session[:sort] = sort
       session[:ratings] = @selected_ratings
       flash.keep
       redirect_to :sort => sort, :ratings => @selected_ratings and return
     end
+    @msg = params[:msg] if params[:msg]
     @movies = Movie.find_all_by_rating(@selected_ratings.keys, ordering)
   end
 
